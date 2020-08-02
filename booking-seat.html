@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.png">
+
+    <title>Movies - Get Booked Online</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i>
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="movies.html"><i class="fas fa-film"></i> Movies</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-crown"></i> Theaters</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Quận 1</a>
+                        <a class="dropdown-item" href="#">Quận 2</a>
+                        <a class="dropdown-item" href="#">Quận 3</a>
+                        <a class="dropdown-item" href="#">Quận 5</a>
+                        <a class="dropdown-item" href="#">Quận Bình Thạnh</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-clock"></i> Upcoming</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-crown"></i> Đăng nhập</a>
+                    <div class="dropdown-menu">
+                        <div class="btn--dropdown-menu js__dropdown" data-target="#dropdown--menu-2" >
+                            <a href="#">Đăng Nhập</a>
+                        </div>
+                        
+                            <form action="https://www.bhdstar.vn/wp-admin/admin-ajax.php" method="post" id="bhd-form-login-top">
+                                <input type="hidden" name="bhd_lang" value="en">
+                                <input type="hidden" name="action" value="desktop_login">
+                                <div class="controls"><input name="email" type="text" placeholder="Email" class="inp--text user_login_email"></div>
+                                <div class="controls"><input name="password" type="password" placeholder="Password" class="inp--text user_login_pass"></div>
+                                <div class="clearfix controls--submit">
+                                    <button type="submit" id="bhd-login-top" data-style="expand-left" class="btn-submit ladda-button login-submit">Login</button>
+                                    <a href="https://www.bhdstar.vn/en/quen-mat-khau/" class="forgot--link">Forgot password</a>
+                                </div>
+                                <a class="bhd-dang-ky" href="https://www.bhdstar.vn/en/dang-ky/">Register member</a>
+                            </form>
+                        </div>
+                                      
+                    </div>
+                </li>
+
+
+            </ul>
+            <a class="nav-button" href="movies.html"><i class="fas fa-ticket-alt"></i> Get Tickets</a>
+        </div>
+    </nav>
+    <!-- breadcrumbs -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Page</li>
+        </ol>
+    </nav>
+    <!-- /breadcrumbs -->
+    <div class="cinema-seat" style="display: block;">
+            <table >
+                <tbody>
+                    <tr>
+                        <td class="road" colspan="2">X</td>
+                        <td class="single" data-seat="11">A01</td>
+                        <td class="single" data-seat="12">A02</td>
+                        <td class="single" data-seat="13">A03</td>
+                        <td class="single" data-seat="14">A04</td>
+                        <td class="single" data-seat="15">A05</td>
+                        <td class="single" data-seat="16">A06</td>
+                        <td class="single" data-seat="17">A07</td>
+                        <td class="single" data-seat="18">A08</td>
+                        <td class="single" data-seat="19">A09</td>
+                    </tr>
+                    <tr>
+                        <td class="road" colspan="2">X</td>
+                        <td class="single" data-seat="21">B01</td>
+                        <td class="single" data-seat="22">B02</td>
+                        <td class="single" data-seat="23">B03</td>
+                        <td class="single" data-seat="24">B04</td>
+                        <td class="single" data-seat="25">B05</td>
+                        <td class="single" data-seat="26">B06</td>
+                        <td class="single" data-seat="27">B07</td>
+                        <td class="single" data-seat="28">B08</td>
+                        <td class="single" data-seat="29">B09</td>
+                    </tr>
+                    <tr>
+                        <td class="road" colspan="2">X</td>
+                        <td class="single" data-seat="31">C01</td>
+                        <td class="single" data-seat="32">C02</td>
+                        <td class="single" data-seat="33">C03</td>
+                        <td class="single" data-seat="34">C04</td>
+                        <td class="single" data-seat="35">C05</td>
+                        <td class="single" data-seat="36">C06</td>
+                        <td class="single" data-seat="37">C07</td>
+                        <td class="single" data-seat="38">C08</td>
+                        <td class="single" data-seat="39">C09</td>
+                    </tr>
+                    <tr>
+                        <td class="road" colspan="2">X</td>
+                        <td class="single" data-seat="41">D01</td>
+                        <td class="single" data-seat="42">D02</td>
+                        <td class="single" data-seat="43">D03</td>
+                        <td class="single" data-seat="44">D04</td>
+                        <td class="single" data-seat="45">D05</td>
+                        <td class="single" data-seat="46">D06</td>
+                        <td class="single" data-seat="47">D07</td>
+                        <td class="single" data-seat="48">D08</td>
+                        <td class="single" data-seat="49">D09</td>
+                    </tr>
+                    <tr>
+                        <td class="road" colspan="2">X</td>
+                        <td class="single" data-seat="51">E01</td>
+                        <td class="single" data-seat="52">E02</td>
+                        <td class="single" data-seat="53">E03</td>
+                        <td class="single" data-seat="54">E04</td>
+                        <td class="single" data-seat="55">E05</td>
+                        <td class="single" data-seat="56">E06</td>
+                        <td class="single" data-seat="57">E07</td>
+                        <td class="single" data-seat="58">E08</td>
+                        <td class="single" data-seat="59">E09</td>
+                    </tr>
+                    <tr>
+                        <td class="road" colspan="2">X</td>
+                        <td class="single" data-seat="61">F01</td>
+                        <td class="single" data-seat="62">F02</td>
+                        <td class="single" data-seat="63">F03</td>
+                        <td class="single" data-seat="64">F04</td>
+                        <td class="single" data-seat="65">F05</td>
+                        <td class="single" data-seat="66">F06</td>
+                        <td class="single" data-seat="67">F07</td>
+                        <td class="single" data-seat="68">F08</td>
+                        <td class="single" data-seat="69">F09</td>
+                    </tr>
+                    <tr>
+                        <td class="road" colspan="2">X</td>
+                        <td class="single" data-seat="71">G01</td>
+                        <td class="single" data-seat="72">G02</td>
+                        <td class="single" data-seat="73">G03</td>
+                        <td class="single" data-seat="74">G04</td>
+                        <td class="single" data-seat="75">G05</td>
+                        <td class="single" data-seat="76">G06</td>
+                        <td class="single" data-seat="77">G07</td>
+                        <td class="single" data-seat="78">G08</td>
+                        <td class="single" data-seat="79">G09</td>
+                    </tr>
+                    <tr>
+                        <td class="road" colspan="2">X</td>
+                        <td class="single" data-seat="81">H01</td>
+                        <td class="single" data-seat="82">H02</td>
+                        <td class="single" data-seat="83">H03</td>
+                        <td class="single" data-seat="84">H04</td>
+                        <td class="single" data-seat="85">H05</td>
+                        <td class="single" data-seat="86">H06</td>
+                        <td class="single" data-seat="87">H07</td>
+                        <td class="single" data-seat="88">H08</td>
+                        <td class="single" data-seat="89">H09</td>
+                    </tr>
+                    <tr>
+                        <td class="road" colspan="2">X</td>
+                        <td class="single" data-seat="91">J01</td>
+                        <td class="single" data-seat="92">J02</td>
+                        <td class="single" data-seat="93">J03</td>
+                        <td class="single" data-seat="94">J04</td>
+                        <td class="single" data-seat="95">J05</td>
+                        <td class="single" data-seat="96">J06</td>
+                        <td class="single" data-seat="97">J07</td>
+                        <td class="single" data-seat="98">J08</td>
+                        <td class="single" data-seat="99">J09</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item">
+                            <a href="page.html">About us</a>
+                        </li>
+                        <li class="list-inline-item">&sdot;</li>
+                        <li class="list-inline-item">
+                            <a href="page.html">Refunds</a>
+                        </li>
+                        <li class="list-inline-item">&sdot;</li>
+                        <li class="list-inline-item">
+                            <a href="page.html">Terms and Privacy</a>
+                        </li>
+                        <li class="list-inline-item">&sdot;</li>
+                        <li class="list-inline-item">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <p class="small mb-4 mb-lg-0">Ramadan Byalk &copy; 2018. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item mr-3 ">
+                            <a href="https://linkedin.com/in/byalk" class="footer-fb">
+                  <i class="fab fa-linkedin fa-2x fa-fw"></i>
+                </a>
+                        </li>
+                        <li class="list-inline-item mr-3">
+                            <a href="#" class="footer-tw">
+                  <i class="fab fa-twitter fa-2x fa-fw"></i>
+                </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="footer-in">
+                  <i class="fab fa-instagram fa-2x fa-fw"></i>
+                </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
