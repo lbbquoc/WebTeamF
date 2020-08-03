@@ -1,5 +1,6 @@
 body {
     background: #fff;
+
 }
 
 .container {
@@ -14,12 +15,59 @@ nav {
     background: linear-gradient(90deg, rgba(64, 26, 130, 1) 0%, rgba(201, 0, 135, 1) 100%); */
 }
 
+.nav-item .dropdown-menu {
+    background: white;
+}
+
+.navbar-box-sign-in{
+    background-image: none;
+    
+}
+
+.navbar-box-sign-in .dropdown-menu {
+    
+    margin-left: -200px;
+    width: 350px;
+    
+}
+.navbar-box-sign-in form{
+    width: 250px;
+    margin: 1em 2.25em;
+}
+.navbar-box-sign-in form input[type=text],input[type=password]{
+    width: 110%;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.navbar-box-sign-in form button[type=submit]{
+    width: 70%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 5px;
+    margin: 0 3.25em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+.navbar-box-sign-in form button[type=submit]:hover{
+    background-color: #45a049;
+}
+
+.dang-ky{
+
+}
 .nav-item a {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 17px;
     color: #6B5B95;
     margin-right: 20px
+    
 }
 
 .nav-item a i {
@@ -32,6 +80,7 @@ nav {
 
 .navbar-toggler {
     color: #fff;
+    
 }
 
 .nav-button {
@@ -50,9 +99,7 @@ nav {
     transition: all 0.4s;
 }
 
-.nav-item .dropdown-menu {
-    background: white;
-}
+
 /* end navbar */
 
 /* start main */
@@ -581,6 +628,7 @@ form select, .form_custom select {
     border: none !important;
     background-color: transparent;
     border-bottom: 1px solid #423A6B !important;
+    
 }
 
 .contact-submit {
@@ -642,3 +690,128 @@ footer.footer {
     background: linear-gradient(90deg, rgba(64, 26, 130, 1) 0%, rgba(201, 0, 135, 1) 100%);
     color: transparent;
 }
+
+/* Thành thêm vào css  */
+.movie_card_3 {
+    background: rgb(64, 26, 130);
+    background: linear-gradient(90deg, rgba(64, 26, 130, 1) 0%, rgba(201, 0, 135, 1) 100%);
+    background-image: url(https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5ebac0ad7af24f0006cdbd27%2F0x0.jpg%3FcropX1%3D205%26cropX2%3D5538%26cropY1%3D0%26cropY2%3D3000);
+    position: relative;
+    display: block;
+    width: 1200px;
+    height: 450px;
+    margin: 100px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+
+.movie_card_4 {
+    background: rgb(64, 26, 130);
+    background: linear-gradient(90deg, rgba(64, 26, 130, 1) 0%, rgba(201, 0, 135, 1) 100%);
+    background-image: url(https://blog.fshare.vn/wp-content/uploads/2020/04/photo-1-1565983179390677807386-1.jpg);
+    position: relative;
+    display: block;
+    width: 1200px;
+    height: 450px;
+    margin: 100px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+/* Thành finished */
+
+/* Huyền - css  */
+
+.movie_card, .movie_card_scooby, .movie_card_nhim-soc {
+    background: rgb(64, 26, 130);
+    background: linear-gradient(90deg, rgba(64, 26, 130, 1) 0%, rgba(201, 0, 135, 1) 100%);
+    position: relative;
+    display: block;
+    width: 1200px;
+    height: 450px;
+    margin: 100px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+.movie_card_scooby {
+    background-image: url('https://phunuvietnam.mediacdn.vn/thumb_w/700/179072216278405120/2020/7/1/sc-15935369556971083796339-765-0-2493-2764-crop-1593536967233944345197.jpg');
+}
+.movie_card_nhim-soc {
+    background-image: url('https://i.ytimg.com/vi/8ngypOEtGsY/maxresdefault.jpg');
+}
+
+/* huyền finished */
+
+/* Nhân css */
+.movie_card_5 {
+    background: rgb(64, 26, 130);
+    background: linear-gradient(90deg, rgba(64, 26, 130, 1) 0%, rgba(201, 0, 135, 1) 100%);
+    background-image: url('https://image.thanhnien.vn/768/uploaded/caotung/2020_07_09/1-15859064887561069648487_mxjv.jpg');
+    position: relative;
+    display: block;
+    width: 1200px;
+    height: 450px;
+    margin: 100px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+
+.movie_card_6 {
+    background: rgb(64, 26, 130);
+    background: linear-gradient(90deg, rgba(64, 26, 130, 1) 0%, rgba(201, 0, 135, 1) 100%);
+    background-image: url('https://znews-photo.zadn.vn/w660/Uploaded/ngogtn/2020_07_27/MV5BNjU0YTIxNDQtNWIxZS00MDU5LWI1MDItMTBiNGYxMDQxNTRkXkEyXkFqcGdeQXVyMzIwNDY4NDI_._V1_SX1777_CR0_0_1777_743_AL_.jpg');
+    position: relative;
+    display: block;
+    width: 1200px;
+    height: 450px;
+    margin: 100px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+/* Nhân finished */
+
+/* Long css */
+#rom{
+    background-image : url('https://cdn.moveek.com/media/cache/full/5ede44a6c2a26695229840.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+#kingmans{
+    background-image : url('https://cdn.moveek.com/media/cache/full/cc38389666e7f8125b8d4616ce3ef74e22fab015.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+/* Long finished */
+
+
+/* ----------------------------------------- PHẦN BOOKING --------------------------------------------- */
+
+.single{
+    background-color: #444451;
+    color: white;
+    height: 12px;
+    width: 15px;
+    margin: 5px;
+    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    height: 30px;
+    width: 35px;
+    background: #01163e;
+    border: 2px solid #314c81;
+    transition: all .2s ease;
+}
+
+
+
+
+
+
+
+/* ----------------------------------------- PHẦN BOOKING --------------------------------------------- */
