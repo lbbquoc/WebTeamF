@@ -1,0 +1,8 @@
+bất lợi:
+
+- khi chuyển phim thì : số lượng ghế đã đặt không đổi
+- không có chức năng xóa tất cả các chỗ ngồi ( trường hợp muốn chọn lại )
+- không có xuất bill tính tiền
+- không cho khách hàng chọn phim vào ngày nào/ khung giờ nào ...
+- đếm xem còn bao nhiêu chỗ trống ( để dễ nắm ) 
+- chưa hiển thị được số ghế đã được đặt sẵn 
